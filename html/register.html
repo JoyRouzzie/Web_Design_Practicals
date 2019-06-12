@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Register | Ventures Kenya</title>
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+</head>
+<body>
+    <header>
+        <h1>
+            Vick Ventures
+        </h1>
+        <p>
+            The Home of Tech-Preneurship.
+        </p>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="about-us.html">About Us</a>
+                <div class="subMenu1">
+                    <ul>
+                        <li><a href="#">Mission</a></li>
+                        <li><a href="#">Vision</a></li>
+                        <li><a href="#">Team</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li><a href="#">Services</a>
+                <div class="subMenu1">
+                    <ul>
+                        <li><a href="#">Web Design</a></li>
+                        <li class="hoverNav"><a href="#">Marketing</a>
+                            <span class="angleRight">
+                                            &gt;
+                                        </span>
+                            <div class="subMenu2">
+                                <ul>
+                                    <li><a href="#">SEO</a></li>
+                                    <li><a href="#">Socio Media</a></li>
+                                    <li><a href="#">Digital</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="hoverNav"><a href="#">Mobile App</a>
+                            <span class="angleRight">
+                                            &gt;
+                                        </span>
+                            <div class="subMenu2">
+                                <ul>
+                                    <li><a href="#">SEO</a></li>
+                                    <li><a href="#">Socio Media</a></li>
+                                    <li><a href="#">Digital</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+            <li><a href="#">Clients</a></li>
+            <li><a href="#">Investors</a></li>
+            <li><a href="#">Pricing</a></li>
+            <li><a href="#">Training</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="contact_us.html">Contact</a></li>
+            <li><a href="login.html">Login</a></li>
+            <li class="active"><a href="register.html">Register</a></li>
+        </ul>
+    </nav>
+    <!--<button onclick="document.getElementById('id01').style.display='block'">-->
+        <!--Sign Up-->
+    <!--</button>-->
+    <div id="id01" class="modal">
+        <!--<span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">-->
+            <!--times;-->
+        <!--</span>-->
+        <form class="modalContent" action="/actionPage.php">
+            <div class="container">
+                <h2 class="signup">Sign Up</h2>
+                <br>
+                <br>
+                <span>Please fill in this form to create an account.</span>
+                <hr>
+
+                <label for="fname"><b>First Name</b></label>
+                <input type="text" placeholder="Enter First Name" name="name" required>
+
+                <label for="lname"><b>Second Name</b></label>
+                <input type="text" placeholder="Enter Second Name" name="name" required>
+
+                <label for="gender"><b>Gender</b></label>
+                <label class="gender">
+                    Male
+                    <input type="radio" name="gender" checked="checked">
+                    <span class="checkmark"></span>
+                </label>
+                <label class="gender">
+                    Female
+                    <input type="radio" name="gender">
+                    <span class="checkmark"></span>
+                </label>
+
+                <label for="dob"><b>Date of Birth</b></label>
+                <input type="date" placeholder="Enter Date of Birth" name="dob" required>
+
+                <label for="phone"><b>Phone Number</b></label>
+                <input type="text" placeholder="Enter Phone Number" name="phone" required>
+
+                <label for="email"><b>Email</b></label>
+                <input type="text" placeholder="Enter Email" name="email" required>
+
+                <label for="hobies"><b>Hobbies</b></label>
+                <textarea rows="4" cols="50" placeholder="Enter Your Hobbies Here"></textarea>
+
+                <!--Surround the select box within a "Custom-select"
+                Div element
+                Remember to set the width-->
+                <label for="county"><b>County</b></label>
+                <div class="custom-select" style="width:200px">
+                    <select>
+                        <option value="0" checked="checked">Select County</option>
+                        <option value="1">Nairobi County</option>
+                        <option value="2">Nakuru County</option>
+                        <option value="3">Mombasa County</option>
+                        <option value="4">Kajiado County</option>
+                        <option value="5">Nyeri County</option>
+                        <option value="6">Kiambu County</option>
+                        <option value="7">Kisumu County</option>
+                        <option value="7">Kisii County</option>
+                        <option value="7">Kirinyaga County</option>
+                        <option value="7">Kiambu County</option>
+                        <option value="7">Kericho County</option>
+                    </select>
+                </div>
+
+                <label for="psw"><b>Password</b></label>
+                <input type="password" placeholder="Enter Password" name="psw" required>
+
+                <label for="psw-repeat"><b>Repeat Password</b></label>
+                <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
+
+                <label>
+                    <input type="checkbox" checked="checked" name="remember" style="margin-bottom: 15px">Remember me
+                </label>
+
+                <p>
+                    By creating an account you agree to our <a href="#" style="color: #1e90ff">Terms & Privacy</a>
+                </p>
+                <div class="clearfix">
+                    <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelBtn">
+                        Cancel
+                    </button>
+                    <button type="submit" class="signup">Sign Up</button>
+                </div>
+            </div>
+        </form>
+    </div>
+    <script>
+        //Get the modal
+        var modal = document.getElementById('id01');
+        //when user clicks anywhere outside the modal, close it
+        window.onclick=function (event) {
+            if(event.target===modal){
+                modal.style.display="none";
+            }
+        }
+    </script>
+</body>
+</html>
