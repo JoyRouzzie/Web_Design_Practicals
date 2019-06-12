@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>LogIn | Ventures Kenya</title>
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+</head>
+<body>
+    <header>
+        <h1>
+            Vick Ventures
+        </h1>
+        <p>
+            The Home of Tech-Preneurship.
+        </p>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="about-us.html">About Us</a>
+                <div class="subMenu1">
+                    <ul>
+                        <li><a href="#">Mission</a></li>
+                        <li><a href="#">Vision</a></li>
+                        <li><a href="#">Team</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li><a href="#">Services</a>
+                <div class="subMenu1">
+                    <ul>
+                        <li><a href="#">Web Design</a></li>
+                        <li class="hoverNav"><a href="#">Marketing</a>
+                            <span class="angleRight">
+                                            &gt;
+                                        </span>
+                            <div class="subMenu2">
+                                <ul>
+                                    <li><a href="#">SEO</a></li>
+                                    <li><a href="#">Socio Media</a></li>
+                                    <li><a href="#">Digital</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="hoverNav"><a href="#">Mobile App</a>
+                            <span class="angleRight">
+                                            &gt;
+                                        </span>
+                            <div class="subMenu2">
+                                <ul>
+                                    <li><a href="#">SEO</a></li>
+                                    <li><a href="#">Socio Media</a></li>
+                                    <li><a href="#">Digital</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+            <li><a href="#">Clients</a></li>
+            <li><a href="#">Investors</a></li>
+            <li><a href="#">Pricing</a></li>
+            <li><a href="#">Training</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="contact_us.html">Contact</a></li>
+            <li class="active"><a href="login.html">Login</a></li>
+            <li><a href="register.html">Register</a></li>
+        </ul>
+    </nav>
+    <form action="action_page.php" class="modalContent">
+        <div class="imgcontainer">
+            <img src="../images/img-avatar.png" alt="Avatar" class="avatar">
+        </div>
+        <div class="loginContainer">
+            <h2 class="signup" style="color: #f44336">Log In</h2>
+            <br>
+            <br>
+            <span style="color: #45a049">Please fill in this form to create an account.</span>
+            <hr>
+            <label for="uname"><b>Username</b></label>
+            <input type="text" placeholder="Enter UserName" name="uname" required>
+
+            <label for="psw"><b>Password</b></label>
+            <input type="password" placeholder="Enter Password" name="psw" required>
+
+            <label>
+                <input type="checkbox" checked="checked" name="remember">Remember me
+            </label>
+        </div>
+        <div class="forgotPassword">
+            <span class="">Forgot <a href="#">Password?</a></span>
+        </div>
+        <div class="clearfix">
+            <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelBtn">
+                Cancel
+            </button>
+            <button type="submit" class="signup">Sign Up</button>
+        </div>
+    </form>
+</body>
+</html>
